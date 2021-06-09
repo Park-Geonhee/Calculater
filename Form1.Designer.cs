@@ -1,4 +1,4 @@
-﻿
+
 namespace CalculaterNet
 {
     partial class Form1
@@ -56,7 +56,7 @@ namespace CalculaterNet
             // button_no4
             // 
             this.button_no4.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_no4.Location = new System.Drawing.Point(12, 301);
+            this.button_no4.Location = new System.Drawing.Point(12, 276);
             this.button_no4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_no4.Name = "button_no4";
             this.button_no4.Size = new System.Drawing.Size(100, 75);
@@ -68,7 +68,7 @@ namespace CalculaterNet
             // button_no5
             // 
             this.button_no5.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_no5.Location = new System.Drawing.Point(118, 301);
+            this.button_no5.Location = new System.Drawing.Point(118, 276);
             this.button_no5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_no5.Name = "button_no5";
             this.button_no5.Size = new System.Drawing.Size(100, 75);
@@ -80,7 +80,7 @@ namespace CalculaterNet
             // button_no6
             // 
             this.button_no6.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_no6.Location = new System.Drawing.Point(224, 301);
+            this.button_no6.Location = new System.Drawing.Point(224, 276);
             this.button_no6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_no6.Name = "button_no6";
             this.button_no6.Size = new System.Drawing.Size(100, 75);
@@ -92,18 +92,19 @@ namespace CalculaterNet
             // button_minus
             // 
             this.button_minus.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_minus.Location = new System.Drawing.Point(330, 301);
+            this.button_minus.Location = new System.Drawing.Point(330, 276);
             this.button_minus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_minus.Name = "button_minus";
             this.button_minus.Size = new System.Drawing.Size(100, 75);
             this.button_minus.TabIndex = 0;
             this.button_minus.Text = "-";
             this.button_minus.UseVisualStyleBackColor = true;
+            this.button_minus.Click += new System.EventHandler(this.button_minus_Click);
             // 
             // button_no1
             // 
             this.button_no1.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_no1.Location = new System.Drawing.Point(12, 380);
+            this.button_no1.Location = new System.Drawing.Point(12, 355);
             this.button_no1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_no1.Name = "button_no1";
             this.button_no1.Size = new System.Drawing.Size(100, 75);
@@ -115,7 +116,7 @@ namespace CalculaterNet
             // button_no2
             // 
             this.button_no2.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_no2.Location = new System.Drawing.Point(118, 380);
+            this.button_no2.Location = new System.Drawing.Point(118, 355);
             this.button_no2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_no2.Name = "button_no2";
             this.button_no2.Size = new System.Drawing.Size(100, 75);
@@ -127,7 +128,7 @@ namespace CalculaterNet
             // button_no3
             // 
             this.button_no3.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_no3.Location = new System.Drawing.Point(224, 380);
+            this.button_no3.Location = new System.Drawing.Point(224, 355);
             this.button_no3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_no3.Name = "button_no3";
             this.button_no3.Size = new System.Drawing.Size(100, 75);
@@ -139,7 +140,7 @@ namespace CalculaterNet
             // button_Plus
             // 
             this.button_Plus.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_Plus.Location = new System.Drawing.Point(330, 380);
+            this.button_Plus.Location = new System.Drawing.Point(330, 355);
             this.button_Plus.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_Plus.Name = "button_Plus";
             this.button_Plus.Size = new System.Drawing.Size(100, 75);
@@ -151,7 +152,7 @@ namespace CalculaterNet
             // button_Clear
             // 
             this.button_Clear.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_Clear.Location = new System.Drawing.Point(12, 143);
+            this.button_Clear.Location = new System.Drawing.Point(12, 118);
             this.button_Clear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_Clear.Name = "button_Clear";
             this.button_Clear.Size = new System.Drawing.Size(100, 75);
@@ -163,7 +164,7 @@ namespace CalculaterNet
             // button_no7
             // 
             this.button_no7.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_no7.Location = new System.Drawing.Point(12, 222);
+            this.button_no7.Location = new System.Drawing.Point(12, 197);
             this.button_no7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_no7.Name = "button_no7";
             this.button_no7.Size = new System.Drawing.Size(100, 75);
@@ -175,7 +176,7 @@ namespace CalculaterNet
             // button_ClearAll
             // 
             this.button_ClearAll.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_ClearAll.Location = new System.Drawing.Point(118, 143);
+            this.button_ClearAll.Location = new System.Drawing.Point(118, 118);
             this.button_ClearAll.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_ClearAll.Name = "button_ClearAll";
             this.button_ClearAll.Size = new System.Drawing.Size(100, 75);
@@ -187,7 +188,7 @@ namespace CalculaterNet
             // button_no8
             // 
             this.button_no8.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_no8.Location = new System.Drawing.Point(118, 222);
+            this.button_no8.Location = new System.Drawing.Point(118, 197);
             this.button_no8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_no8.Name = "button_no8";
             this.button_no8.Size = new System.Drawing.Size(100, 75);
@@ -199,7 +200,7 @@ namespace CalculaterNet
             // button_Delete
             // 
             this.button_Delete.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_Delete.Location = new System.Drawing.Point(224, 143);
+            this.button_Delete.Location = new System.Drawing.Point(224, 118);
             this.button_Delete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_Delete.Name = "button_Delete";
             this.button_Delete.Size = new System.Drawing.Size(100, 75);
@@ -211,7 +212,7 @@ namespace CalculaterNet
             // button_no9
             // 
             this.button_no9.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_no9.Location = new System.Drawing.Point(224, 222);
+            this.button_no9.Location = new System.Drawing.Point(224, 197);
             this.button_no9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_no9.Name = "button_no9";
             this.button_no9.Size = new System.Drawing.Size(100, 75);
@@ -223,29 +224,31 @@ namespace CalculaterNet
             // button_devide
             // 
             this.button_devide.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_devide.Location = new System.Drawing.Point(330, 143);
+            this.button_devide.Location = new System.Drawing.Point(330, 118);
             this.button_devide.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_devide.Name = "button_devide";
             this.button_devide.Size = new System.Drawing.Size(100, 75);
             this.button_devide.TabIndex = 0;
             this.button_devide.Text = "÷";
             this.button_devide.UseVisualStyleBackColor = true;
+            this.button_devide.Click += new System.EventHandler(this.button_devide_Click);
             // 
             // button_multiple
             // 
             this.button_multiple.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_multiple.Location = new System.Drawing.Point(330, 222);
+            this.button_multiple.Location = new System.Drawing.Point(330, 197);
             this.button_multiple.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_multiple.Name = "button_multiple";
             this.button_multiple.Size = new System.Drawing.Size(100, 75);
             this.button_multiple.TabIndex = 0;
             this.button_multiple.Text = "×";
             this.button_multiple.UseVisualStyleBackColor = true;
+            this.button_multiple.Click += new System.EventHandler(this.button_multiple_Click);
             // 
             // button_ChangeSign
             // 
             this.button_ChangeSign.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_ChangeSign.Location = new System.Drawing.Point(12, 459);
+            this.button_ChangeSign.Location = new System.Drawing.Point(12, 434);
             this.button_ChangeSign.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_ChangeSign.Name = "button_ChangeSign";
             this.button_ChangeSign.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -258,7 +261,7 @@ namespace CalculaterNet
             // button_no0
             // 
             this.button_no0.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_no0.Location = new System.Drawing.Point(118, 459);
+            this.button_no0.Location = new System.Drawing.Point(118, 434);
             this.button_no0.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_no0.Name = "button_no0";
             this.button_no0.Size = new System.Drawing.Size(100, 75);
@@ -270,7 +273,7 @@ namespace CalculaterNet
             // button_Dot
             // 
             this.button_Dot.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_Dot.Location = new System.Drawing.Point(224, 459);
+            this.button_Dot.Location = new System.Drawing.Point(224, 434);
             this.button_Dot.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_Dot.Name = "button_Dot";
             this.button_Dot.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -283,26 +286,28 @@ namespace CalculaterNet
             // button_Equal
             // 
             this.button_Equal.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Bold);
-            this.button_Equal.Location = new System.Drawing.Point(330, 459);
+            this.button_Equal.Location = new System.Drawing.Point(330, 434);
             this.button_Equal.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_Equal.Name = "button_Equal";
             this.button_Equal.Size = new System.Drawing.Size(100, 75);
             this.button_Equal.TabIndex = 0;
             this.button_Equal.Text = "=";
             this.button_Equal.UseVisualStyleBackColor = true;
+            this.button_Equal.Click += new System.EventHandler(this.button_Equal_Click);
             // 
             // textBox_result
             // 
             this.textBox_result.BackColor = System.Drawing.SystemColors.ScrollBar;
             this.textBox_result.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox_result.Font = new System.Drawing.Font("굴림", 50F);
+            this.textBox_result.Font = new System.Drawing.Font("굴림", 35F);
             this.textBox_result.Location = new System.Drawing.Point(12, 47);
             this.textBox_result.Name = "textBox_result";
             this.textBox_result.ReadOnly = true;
-            this.textBox_result.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.textBox_result.Size = new System.Drawing.Size(418, 77);
+            this.textBox_result.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.textBox_result.Size = new System.Drawing.Size(418, 54);
             this.textBox_result.TabIndex = 1;
             this.textBox_result.Text = "0";
+            this.textBox_result.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // txtExp
             // 
@@ -312,15 +317,16 @@ namespace CalculaterNet
             this.txtExp.Location = new System.Drawing.Point(12, 12);
             this.txtExp.Name = "txtExp";
             this.txtExp.ReadOnly = true;
-            this.txtExp.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txtExp.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.txtExp.Size = new System.Drawing.Size(418, 39);
             this.txtExp.TabIndex = 2;
+            this.txtExp.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(444, 541);
+            this.ClientSize = new System.Drawing.Size(441, 518);
             this.Controls.Add(this.txtExp);
             this.Controls.Add(this.textBox_result);
             this.Controls.Add(this.button_multiple);
