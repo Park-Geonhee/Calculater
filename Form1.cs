@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,10 +13,10 @@ namespace CalculaterNet
     public partial class Form1 : Form
     {
         private double savedValue;
-        private double memory;
+        //private double memory;
         private char op = '\0';
-        bool opFlag = false;
-        bool memFlag = false;
+        bool calculate = false;
+        bool memory_bool = false;
 
         public Form1()
         {
@@ -26,11 +26,11 @@ namespace CalculaterNet
         private void Click_Insert_number(object sender, EventArgs e)
         {
             Button btn = sender as Button;
-            if (textBox_result.Text == "0" || opFlag == true || memFlag == true)
+            if (textBox_result.Text == "0" || calculate == true || memory_bool == true)
             {
                 textBox_result.Text = btn.Text;
-                opFlag = false;
-                memFlag = false;
+                calculate = false;
+                memory_bool = false;
             }
             else
                 textBox_result.Text = textBox_result.Text + btn.Text;
@@ -41,7 +41,7 @@ namespace CalculaterNet
             if (textBox_result.Text.Contains("."))
                 return;
             else
-                textBox_result.Text = textBox_result.Text + ".";
+                textBox_result.Text = textBox_result.Text + "." ;
         }
 
         private void button_ChangeSign_Click(object sender, EventArgs e)
@@ -50,13 +50,6 @@ namespace CalculaterNet
             textBox_result.Text = (-v).ToString();
         }
 
-        private void button_Plus_Click(object sender, EventArgs e)
-        {
-            savedValue = Double.Parse(textBox_result.Text);
-            txtExp.Text = textBox_result.Text + " + ";
-            op = '+';
-            opFlag = true;
-        }
 
         private void button_Delete_Click(object sender, EventArgs e)
         {
@@ -76,7 +69,59 @@ namespace CalculaterNet
             txtExp.Text = "";
             savedValue = 0;
             op = '\0';
-            opFlag = false;
+            calculate = false;
+        }
+        private void button_Plus_Click(object sender, EventArgs e)
+        {
+            savedValue = Double.Parse(textBox_result.Text);
+            txtExp.Text = textBox_result.Text + "+";
+            op = '+';
+            calculate = true;
+        }
+
+        private void button_minus_Click(object sender, EventArgs e)
+        {
+            savedValue = Double.Parse(textBox_result.Text);
+            txtExp.Text = textBox_result.Text + " - ";
+            op = '-';
+            calculate = true;
+        }
+
+        private void button_multiple_Click(object sender, EventArgs e)
+        {
+            savedValue = Double.Parse(textBox_result.Text);
+            txtExp.Text = textBox_result.Text + " × ";
+            op = '*';
+            calculate = true;
+        }
+
+        private void button_devide_Click(object sender, EventArgs e)
+        {
+            savedValue = Double.Parse(textBox_result.Text);
+            txtExp.Text = textBox_result.Text + " ÷ ";
+            op = '/';
+            calculate = true;
+        }
+
+        private void button_Equal_Click(object sender, EventArgs e)
+        {
+            Double v = Double.Parse(textBox_result.Text);
+            switch (op)
+            {
+                case '+':
+                    textBox_result.Text = (savedValue + v).ToString();
+                    break;
+                case '-':
+                    textBox_result.Text = (savedValue - v).ToString();
+                    break;
+                case '*':
+                    textBox_result.Text = (savedValue * v).ToString();
+                    break;
+                case '/':
+                    textBox_result.Text = (savedValue / v).ToString();
+                    break;
+            }
+            txtExp.Text = "";
         }
     }
 }
